@@ -1,6 +1,6 @@
 <?php
-	include('villagers.php');
-	$formula = new Vilagers();
+	include('calculate.php');
+	$calc = new calculate();
 ?>
 <form method="post" action="" style="padding:10px;">
 	<table style="border:1px solid #444444;width:100%;border-collapse: collapse;padding:4px;" width="90%">
@@ -29,12 +29,12 @@
 <?php
 	if(isset($_POST['submit']) ){
 	    $formData = $_POST; 
-	    $formula->get_averate($formData);
+	    $calc->get_averate($formData);
 	}
 ?>
 
 <?php
-	echo $formula->getTable(25);
+	echo $calc->getTable(25);
 ?>
 
 

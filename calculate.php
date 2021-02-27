@@ -1,6 +1,6 @@
 <?php
 
-class Vilagers {
+class Calculate {
 	function get_year_death (int $total) {
 		$data = [];
 
